@@ -101,5 +101,8 @@ RUN adduser $UNAME sudo
 ENV ROS_LOCALHOST_ONLY=0
 ENV LIBGL_ALWAYS_SOFTWARE=1
 
+
+RUN echo "source /tiago_public_ws/devel/setup.bash" >> /home/plushri/.bashrc
+
 # Create entrypoint for image
 CMD ["/bin/bash"]
